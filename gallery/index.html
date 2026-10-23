@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій улюблений куточок</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="images/logo.png" alt="Логотип галереї"
+                 width="40" height="40">
+            Мій улюблений куточок
+        </h1>
+        <p>Це моя фотогалерея з улюбленими місцями.
+           Тут зібрані красиві краєвиди природи, де можна
+           відпочити та насолодитися спокоєм.</p>
+    </header>
+
+    <hr>
+
+    <h2>1. Зображення з різними атрибутами</h2>
+
+    <img src="images/nature.jpg"
+         alt="Зелений ліс біля озера">
+
+    <br><br>
+
+    <img src="images/mountains.jpg"
+         alt="Гори серед хмар"
+         width="300" height="200">
+
+    <br><br>
+
+    <img src="images/lake.webp"
+         alt="Тихе озеро серед дерев"
+         width="300">
+
+    <p>
+        Спостереження: без width і height зображення
+        відображається у своєму початковому розмірі.
+        Якщо вказати обидва атрибути, можна змінити пропорції.
+        Якщо вказати лише width, висота автоматично
+        підлаштовується для збереження пропорцій.
+    </p>
+
+    <hr>
+
+    <h2>2. Мої фото</h2>
+
+    <figure>
+        <img src="images/nature.jpg"
+             alt="Зелений ліс у сонячний день"
+             width="300" title="Ліс">
+        <figcaption>Ліс біля дому — 10.06.2026</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/mountains.jpg"
+             alt="Високі гори на горизонті"
+             width="300" title="Гори">
+        <figcaption>Гірський краєвид — 15.07.2026</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/lake.webp"
+             alt="Озеро з чистою водою"
+             width="300" title="Озеро">
+        <figcaption>Улюблене озеро — 20.08.2026</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>3. Зображення-посилання</h2>
+
+    <p>Натисни на мініатюру, щоб відкрити велике зображення:</p>
+
+    <a href="images/nature.jpg" target="_blank">
+        <img src="images/nature.jpg"
+             alt="Мініатюра лісу"
+             width="150">
+    </a>
+
+    <p>Перейти на сайт про природу:</p>
+
+    <a href="https://uk.wikipedia.org/wiki/Природа"
+       target="_blank" rel="noopener noreferrer"
+       title="Інформація про природу">
+        <img src="images/nature.jpg"
+             alt="Зображення природи — перехід на сайт"
+             width="200">
+    </a>
+
+    <hr>
+
+    <h2>4. Зображення з інтернету та локальної папки</h2>
+
+    <p>Зображення з інтернету:</p>
+
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600"
+         alt="Гірське озеро серед зелених гір"
+         width="300">
+
+    <p>Зображення з локальної папки:</p>
+
+    <img src="images/nature.jpg"
+         alt="Краєвид природи з локального файлу"
+         width="300">
+
+    <!-- Зображення з інтернету завантажується за URL
+         і потребує підключення до мережі.
+         Локальне зображення зберігається в папці images
+         і відкривається з файлів проєкту. -->
+
+    <hr>
+
+    <h2>5. Перевірка атрибута alt</h2>
+
+    <img src="images/none.jpg"
+         alt="Зображення відсутнє">
+
+    <!-- Спостереження: оскільки файлу none.jpg немає,
+         браузер не може показати зображення.
+         Замість нього може відображатися значок
+         відсутнього зображення та текст атрибута alt. -->
+
+    <hr>
+
+    <footer>
+        <p>Моя фотогалерея © 2026</p>
+    </footer>
+
+</body>
+</html>
